@@ -1,10 +1,12 @@
 {
 	"game": {
-		"name": "Test server",
-		"password": "test",
-		"passwordAdmin": "test",
-		"admins" : [],
-		"scenarioId": "{ECC61978EDCC2B5A}Missions/23_Campaign.conf",
+		"name": "[GOR] Official Gorynych Training Session",
+		"password": "password",
+		"passwordAdmin": "adminPass",
+		"admins": [
+			"d5652b06-e14f-4cf7-a481-468864577321"
+		],
+		"scenarioId": "{59AD59368755F41A}Missions/21_GM_Eden.conf",
 		"maxPlayers": 20,
 		"visible": true,
 		"gameProperties": {
@@ -18,9 +20,15 @@
 			"VONDisableDirectSpeechUI": false,
 			"VONCanTransmitCrossFaction": false
 		},
-		"mods": []
-	    },
-    "operating": {
-        "lobbyPlayerSynchronise": true
-    }
+		"mods": [
+			{
+				"modId": "5965550F24A0C152",
+				"name": "Where Am I",
+				"version": "1.2.0"
+			}
+		]
+	},
+	"operating": {
+		"lobbyPlayerSynchronise": true
+	}
 }

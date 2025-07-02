@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  reforger:
+    build: .
+    image: reforger:latest
+    container_name: reforger-server
+    restart: unless-stopped
+    ports:
+      - "2001:2001/udp"
+    volumes:
+      - .:/reforger/configs
+      - ./addons:/reforger/addons
+    command: ["test.json"]
